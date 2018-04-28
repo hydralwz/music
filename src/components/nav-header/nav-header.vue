@@ -9,13 +9,13 @@
 
     .nav-header
         position relative
-        height 44px
+        height 30px
         text-align center
         font-size 0
         .title
             display: inline-block
             vertical-align top
-            line-height 44px
+            line-height 30px
             font-size $font-size-large
             color $color-theme
 </style>

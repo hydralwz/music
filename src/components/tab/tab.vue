@@ -18,8 +18,8 @@
   @import "~common/stylus/variable"
   .tab
     display flex
-    height 44px
-    line-height 44px
+    height 35px
+    line-height 35px
     font-size: $font-size-medium
     .tab-item
       flex 1
