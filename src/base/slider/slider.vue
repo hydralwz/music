@@ -12,7 +12,6 @@ export default {
   props: {
     data() {
       return {
-        dots: [],
         currentPageIndex: 0
       }
     },
@@ -93,6 +92,9 @@ export default {
         this.slider.next()
       }, this.interval)
     }
+  },
+  destroyed() {
+    clearTimeout(this.timer)
   }
 }
 </script>

@@ -6,11 +6,11 @@
     <router-link tag="div" class="tab-item" to="./singer">
       <span class="tab-target">歌手</span>
     </router-link>
-    <router-link tag="div" class="tab-item" to="./rank">
-      <span class="tab-target">排行</span>
-    </router-link>
     <router-link tag="div" class="tab-item" to="./search">
       <span class="tab-target">搜索</span>
+    </router-link>
+    <router-link tag="div" class="tab-item" to="./user">
+      <span class="tab-target">我的歌曲</span>
     </router-link>
   </div>
 </template>
