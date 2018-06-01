@@ -21,8 +21,8 @@
                 <img class="icon-img" v-lazy="item.imgurl">
               </div>
               <div class="text">
-                <h2 class="name" v-html="item.creator.name"></h2>
-                <p class="desc" v-html="item.dissname"></p>
+                <h2 class="name" v-html="item.dissname"></h2>
+                <p class="desc" v-html="item.creator.name"></p>
               </div>
             </li>
           </ul>
@@ -42,6 +42,8 @@ import Scroll from 'base/scroll/scroll'
 import {getRecommend, getDiscList} from 'api/recommend'
 import {ERR_OK} from 'api/config'
 import Loading from 'base/loading/loading'
+import { mapMutations } from 'vuex'
+
 export default {
   data() {
     return {
@@ -91,7 +93,10 @@ export default {
           this.discList = res.data.list
         }
       })
-    }
+    },
+    ...mapMutations({
+      setDisc: 'SET_DISC'
+    })
   },
   components: {
     Slider,

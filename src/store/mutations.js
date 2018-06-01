@@ -21,6 +21,12 @@ const mututations = {
   },
   [types.SET_CURRENT_INDEX](state, index) {
     state.currentIndex = index
+  },
+  [types.SET_DISC](state, disc) {
+    state.disc = disc
+  },
+  [types.SET_FAVORITE_LIST](state, list) {
+    state.favoriteList = list
   }
 }
 
