@@ -1,4 +1,4 @@
-import {playMode} from 'api/config'
+import {playMode} from 'common/js/config'
 
 const state = {
   singer: {},
